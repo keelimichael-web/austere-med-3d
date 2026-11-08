@@ -1,6 +1,6 @@
 # Austere Medicine 3D Training Aids
 
-A living repository of 3D-printable training aids for medical interventions, built for the austere and resistance medicine community.
+A living repository of 3D-printable training aids for medical interventions, maintained by contributors to the *Medical Annex to the Resistance Operating Concept* (SOMA MSIW working group) and open to the wider austere medicine community.
 
 **Browse the catalog:** https://keelimichael-web.github.io/austere-med-3d/
 

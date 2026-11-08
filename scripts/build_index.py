@@ -6,6 +6,7 @@ Runs in GitHub Actions on every push; the Pages site is the output of this scrip
 import html
 import json
 import os
+import shutil
 from pathlib import Path
 
 import yaml
@@ -16,6 +17,7 @@ EXTERNAL = ROOT / "catalog" / "external.yml"
 SITE = ROOT / "site"
 REPO = os.environ.get("GITHUB_REPOSITORY", "keelimichael-web/austere-med-3d")
 BRANCH = os.environ.get("GITHUB_REF_NAME", "main")
+PAGES_URL = f"https://{REPO.split('/')[0]}.github.io/{REPO.split('/')[1]}/"
 
 MODEL_EXTS = {".stl", ".3mf", ".step", ".stp", ".obj", ".scad", ".f3d", ".gcode", ".zip"}
 
@@ -62,6 +64,11 @@ def scan_models():
                 except yaml.YAMLError:
                     info = {}
             rel = model_dir.relative_to(ROOT).as_posix()
+            preview = next(
+                (model_dir / n for n in ("preview.png", "preview.jpg", "photo.jpg", "photo.png")
+                 if (model_dir / n).exists()),
+                None,
+            )
             entry = {
                 "name": info.get("name") or model_dir.name.replace("-", " ").capitalize(),
                 "category": cat_dir.name,
@@ -75,6 +82,8 @@ def scan_models():
                 "source": info.get("source", ""),
                 "url": f"https://github.com/{REPO}/tree/{BRANCH}/{rel}",
                 "guide": f"https://github.com/{REPO}/blob/{BRANCH}/{rel}/README.md" if readme_path.exists() else "",
+                "img": f"img/{cat_dir.name}--{model_dir.name}{preview.suffix}" if preview else "",
+                "_img_src": str(preview) if preview else "",
                 "files": [
                     {
                         "name": f.name,
@@ -116,6 +125,8 @@ def card(e) -> str:
     esc = html.escape
     badge = "In this repo" if e["kind"] == "repo" else esc(e.get("source") or "External")
     parts = [f'<article class="card" data-cat="{esc(e["category"])}">']
+    if e.get("img"):
+        parts.append(f'<a href="{esc(e["url"])}"><img class="thumb" src="{esc(e["img"])}" alt="{esc(e["name"])} preview" loading="lazy"></a>')
     parts.append(f'<div class="card-top"><span class="badge badge-{e["kind"]}">{badge}</span></div>')
     parts.append(f'<h3><a href="{esc(e["url"])}">{esc(e["name"])}</a></h3>')
     if e.get("intervention"):
@@ -155,9 +166,12 @@ def build_page(entries) -> str:
     sections = "\n".join(cats)
     n_repo = sum(1 for e in entries if e["kind"] == "repo")
     n_ext = sum(1 for e in entries if e["kind"] == "external")
-    return TEMPLATE.replace("{{SECTIONS}}", sections).replace(
-        "{{COUNTS}}", f"{n_repo} hosted model{'s' if n_repo != 1 else ''} · {n_ext} external resource{'s' if n_ext != 1 else ''}"
-    ).replace("{{REPO}}", REPO)
+    return (
+        TEMPLATE.replace("{{SECTIONS}}", sections)
+        .replace("{{COUNTS}}", f"{n_repo} hosted model{'s' if n_repo != 1 else ''} · {n_ext} external resource{'s' if n_ext != 1 else ''}")
+        .replace("{{REPO}}", REPO)
+        .replace("{{PAGES_URL}}", PAGES_URL)
+    )
 
 
 TEMPLATE = """<!doctype html>
@@ -198,6 +212,7 @@ section{margin-top:34px}
 h2{font-size:1.25rem;border-bottom:1px solid var(--line);padding-bottom:6px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.thumb{width:calc(100% + 32px);margin:-14px -16px 0;border-radius:9px 9px 0 0;display:block;border-bottom:1px solid var(--line)}
 .card h3{margin:8px 0 4px;font-size:1.05rem}
 .card a{color:var(--accent);text-decoration:none}
 .card a:hover{text-decoration:underline}
@@ -218,7 +233,7 @@ footer a{color:var(--accent)}
 <div class="wrap">
 <header>
   <h1>Austere Medicine 3D Training Aids</h1>
-  <p class="sub">A living repository of printable training aids for medical interventions. Add a model to the <a href="https://github.com/{{REPO}}" style="color:var(--accent)">repository</a> and this page rebuilds itself.</p>
+  <p class="sub">A living repository of printable training aids for medical interventions, maintained by contributors to the <em>Medical Annex to the Resistance Operating Concept</em>. Add a model to the <a href="https://github.com/{{REPO}}" style="color:var(--accent)">repository</a> and this page rebuilds itself.</p>
   <p class="counts">{{COUNTS}}</p>
 </header>
 
@@ -232,6 +247,7 @@ footer a{color:var(--accent)}
 
 <footer>
   <p>Training aids only; nothing here is a medical device or intended for clinical use. Contributions welcome: see the <a href="https://github.com/{{REPO}}/blob/main/CONTRIBUTING.md">contribution guide</a>. Unless marked otherwise, hosted models are CC BY-NC-SA 4.0.</p>
+  <p id="cite"><strong>Cite as:</strong> <em>Austere Medicine 3D Training Aids</em>, living repository. {{PAGES_URL}}</p>
 </footer>
 </div>
 </body>
@@ -242,6 +258,11 @@ footer a{color:var(--accent)}
 def main():
     entries = scan_models() + load_external()
     SITE.mkdir(exist_ok=True)
+    (SITE / "img").mkdir(exist_ok=True)
+    for e in entries:
+        src = e.pop("_img_src", "")
+        if src and e.get("img"):
+            shutil.copyfile(src, SITE / e["img"])
     (SITE / "index.html").write_text(build_page(entries))
     (SITE / "catalog.json").write_text(json.dumps(entries, indent=2))
     print(f"Built site with {len(entries)} entries -> {SITE}")

@@ -8,7 +8,7 @@
   category: airway
   url: https://emcrit.org/emcrit/wearable-cric-trainer/
   source: EMCrit
-  notes: Strap-on cricothyrotomy trainer worn by a live role-player, so the student manages a moving patient, not a block on a table. Print files and build instructions at the link.
+  notes: Strap-on cricothyrotomy trainer worn by a live role-player, so the student manages a moving patient, not a block on a table. Build instructions at the link; the hosted STL link has been unreliable for years (dead as of Nov 2026), which is part of why this repository exists.
   credit: Shared in the Med Annex working group
 
 - name: Rib section trainer

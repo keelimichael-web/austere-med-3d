@@ -1,0 +1,7 @@
+name: Parametric cricothyrotomy trainer
+intervention: Surgical cricothyrotomy
+description: Half-shell larynx and trachea on a strap plate with palpable thyroid notch, proud cricoid ring, and an open cricothyroid membrane window. Tape or a gelatin skin patch covers the window and is cut during training. OpenSCAD source included; every dimension is a named parameter.
+license: CC BY-NC-SA 4.0
+print_notes: PLA or PETG, 0.2 mm layers, 3 perimeters, no supports. Prints flat.
+consumables: 25 mm webbing or velcro strap, layered cloth tape or Press'n Seal plus 3-5 mm foam sheet for the skin and membrane.
+credit: Original design for this repository
