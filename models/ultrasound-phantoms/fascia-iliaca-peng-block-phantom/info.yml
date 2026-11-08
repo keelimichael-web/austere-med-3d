@@ -1,0 +1,7 @@
+name: Fascia iliaca / PENG block ultrasound phantom
+intervention: Ultrasound-guided regional anesthesia (fascia iliaca and PENG blocks)
+description: 3D-printed hemipelvis cast in ballistic gelatin with cord nerve bundles, tubing vessels, and plastic-wrap fascial planes. Build guide in README; print files pending.
+license: CC BY-NC-SA 4.0
+print_notes: PLA hemipelvis, anterior half only. Print small plugs to seal vessel tubing.
+consumables: Gelatin 100 g + water 900 mL + flour 20 g per batch, 550 cord, surgical tubing, plastic wrap.
+credit: Working group contribution, October 2026

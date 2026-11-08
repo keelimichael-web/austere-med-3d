@@ -1,0 +1,45 @@
+# Models and resources hosted elsewhere. These render on the catalog page
+# alongside the models stored in this repository.
+#
+# Fields: name (required), url (required), category, source, notes, credit
+# Credit people by name only with their OK; "working group" is always fine.
+
+- name: Wearable Cric Trainer
+  category: airway
+  url: https://emcrit.org/emcrit/wearable-cric-trainer/
+  source: EMCrit
+  notes: Strap-on cricothyrotomy trainer worn by a live role-player, so the student manages a moving patient, not a block on a table. Print files and build instructions at the link.
+  credit: Shared in the Med Annex working group
+
+- name: Rib section trainer
+  category: thoracic
+  url: https://www.thingiverse.com/thing:4018084
+  source: Thingiverse
+  notes: Printable rib section for finger thoracostomy, chest tube, and needle decompression landmark practice. Overlay with gelatin, foam, or pork belly for tissue feel.
+  credit: Shared in the Med Annex working group
+
+- name: IO trainer
+  category: vascular-access
+  url: https://www.thingiverse.com/thing:4157805
+  source: Thingiverse
+  notes: Printable intraosseous access trainer. Infill percentage sets the cortical "give"; experiment between 10 and 25 percent.
+  credit: Shared in the Med Annex working group
+
+- name: Working group 3D printing drive
+  category: misc
+  url: https://drive.google.com/drive/folders/1O-YAtFtFyQkpVR5Xw5PcASrMT-Z1-3C-
+  source: Google Drive
+  notes: Shared collection of medical print files gathered by the working group. Candidates for mirroring into this repository as licensing is confirmed.
+  credit: Shared in the Med Annex working group
+
+- name: NIH 3D Print Exchange
+  category: misc
+  url: https://3d.nih.gov/
+  source: NIH
+  notes: Large open library of biomedical and anatomical models, many with open licenses suitable for training builds.
+
+- name: Thingiverse medical search
+  category: misc
+  url: https://www.thingiverse.com/search?q=medical+trainer
+  source: Thingiverse
+  notes: Broad search entry point for printable trainers. Check licenses before mirroring files here.
