@@ -140,7 +140,7 @@ def load_external():
             "credit": row.get("credit", ""),
             "url": row["url"],
             "page": "",
-            "img": "",
+            "img": row.get("image", ""),
             "files": [],
         })
     return entries
@@ -306,7 +306,7 @@ def card(e) -> str:
     ).lower())
     parts = [f'<article class="card" data-search="{search_blob}">']
     if e.get("img"):
-        parts.append(f'<a href="{esc(main_link)}"><img class="thumb" src="{esc(e["img"])}" alt="{esc(e["name"])} preview" loading="lazy"></a>')
+        parts.append(f'<a href="{esc(main_link)}"><img class="thumb" src="{esc(e["img"])}" alt="{esc(e["name"])} preview" loading="lazy" referrerpolicy="no-referrer"></a>')
     parts.append(f'<div><span class="badge badge-{e["kind"]}">{badge}</span></div>')
     parts.append(f'<h3><a href="{esc(main_link)}">{esc(e["name"])}</a></h3>')
     if e.get("intervention"):
@@ -348,7 +348,8 @@ def build_index(entries) -> str:
     )
     n_repo = sum(1 for e in entries if e["kind"] == "repo")
     n_ext = sum(1 for e in entries if e["kind"] == "external")
-    og_img = next((PAGES_URL + e["img"] for e in entries if e.get("img")), "")
+    og_img = next((PAGES_URL + e["img"] for e in entries
+                   if e.get("img") and e["kind"] == "repo"), "")
     out = head(
         "Resistance Medicine Printworks",
         "A living repository of 3D-printable training aids for medical interventions.",
@@ -411,7 +412,7 @@ def build_model_page(e) -> str:
         for f in e["files"]
     )
     out = head(
-        f'{e["name"]} — Austere Med 3D',
+        f'{e["name"]} — Resistance Medicine Printworks',
         e.get("description") or e["name"],
         f'{PAGES_URL}m/{e["slug"]}.html',
         (PAGES_URL + e["img"]) if e.get("img") else "",

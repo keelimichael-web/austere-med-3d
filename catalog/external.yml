@@ -1,8 +1,84 @@
 # Models and resources hosted elsewhere. These render on the catalog page
 # alongside the models stored in this repository.
 #
-# Fields: name (required), url (required), category, source, notes, credit
+# Fields: name (required), url (required), category, source, notes, credit,
+# image (hotlinked preview URL from the source site; optional).
 # Credit people by name only with their OK; "working group" is always fine.
+# Public platform authors are credited by their published handle, as their
+# licenses require attribution.
+
+- name: Cric Airway Trainer
+  category: airway
+  url: https://makerworld.com/en/models/750065
+  source: MakerWorld
+  notes: Cricothyrotomy training model for physicians and paramedics; vinyl tape serves as the cricothyroid membrane. By HealthcareSim Guy, CC BY 4.0.
+  image: https://makerworld.bblmw.com/makerworld/model/USff933ff0f8e202/design/2025-07-04_b283a143d18fa8.jpeg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: Simple Cric Trainer and Mold
+  category: airway
+  url: https://www.printables.com/model/836133-simple-cric-trainer-and-mold
+  source: Printables
+  notes: Minimal cric trainer plus a casting mold; duct tape works for the membrane. By Miles L, CC BY 4.0.
+  image: https://media.printables.com/media/prints/836133/images/6442606_c60fabe5-c7f2-4a2c-a0b0-b4931ffcfbc1_eb229b7c-7bde-454d-b558-e549e53125fa/thumbs/cover/1200x630/jpg/48ad24c7-7c44-4a17-a1b9-e3a8ed6d65ab.jpg
+
+- name: Cricothyrotomy Trainer (CC0)
+  category: airway
+  url: https://www.printables.com/model/698420-cricothyrotomy-cric-crico-crioid-trainer
+  source: Printables
+  notes: Reusable cric trainer aimed at keeping hospital staff proficient without burning expensive commercial consumables. By SpragClutch, CC0 public domain, so it can be freely mirrored and remixed.
+  image: https://media.printables.com/media/prints/698420/images/5485109_b4e39946-43d6-4d01-bbe7-97347c0cb842_fc7c2860-3ab7-4a37-896b-cc596ee61b82/thumbs/cover/1200x630/jpg/4f78d2641cf5fb401150c21615de8c78_display_large_698420.jpg
+
+- name: CICO Rescue Cricothyroidotomy Trainer
+  category: airway
+  url: https://www.thingiverse.com/thing:2530474
+  source: Thingiverse
+  notes: Free neck-and-larynx combination trainer built to accompany the Vortex Approach CICO teaching material (vortexapproach.org). By drandybuck, CC BY-NC-ND 4.0.
+
+- name: High-fidelity cric trainer (validated)
+  category: airway
+  url: https://jdc.jefferson.edu/otofp/122/
+  source: OTO Open (journal)
+  notes: Peer-reviewed 2026 study of a 3D-printed airway model layered with porcine soft tissue; trainee confidence rose significantly. The three STL files are free downloads under "Additional Files" on the article page. Schlegel, Tekumalla et al., Thomas Jefferson University, CC BY-NC-ND 4.0.
+
+- name: Pediatric needle-cric scaling guide
+  category: airway
+  url: https://jetem.org/3d_airway/
+  source: JETem (journal)
+  notes: Open-access recipe for printing neonatal, school-age, and adolescent needle cricothyrotomy trainers by scaling an adult model to 25, 33, and 50 percent, with neonatal dimensions anchored to cadaveric measurements. Article CC BY 4.0; the base STL comes from The Airway App template library.
+
+- name: Silicone Airway Trainer Mold (intubation)
+  category: airway
+  url: https://makerworld.com/en/models/2706141
+  source: MakerWorld
+  notes: Mold set for casting a silicone intubation and airway-anatomy trainer in Ecoflex. By HealthcareSim Guy, CC BY-NC-SA 4.0.
+  image: https://makerworld.bblmw.com/makerworld/model/US9506a9dcb64501/design/879d559a9bf0c957.jpeg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: Chest Tube Trainer (rib model)
+  category: thoracic
+  url: https://makerworld.com/en/models/2718035
+  source: MakerWorld
+  notes: Rib structure with silicone skin overlay for thoracostomy and chest tube placement; works standalone or strapped over an existing manikin. Derived from the Thingiverse rib section also listed here. By HealthcareSim Guy, CC BY-SA 4.0.
+  image: https://makerworld.bblmw.com/makerworld/model/USf4ffce4d3310f3/design/392d2dcd0d62f855.jpeg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: Wound Packing Trainer Mold — bullet
+  category: hemorrhage-wound-care
+  url: https://makerworld.com/en/models/1091410
+  source: MakerWorld
+  notes: Mold for casting a durable silicone wound-packing trainer with realistic depth and resistance, built for Stop the Bleed and trauma courses. By HealthcareSim Guy, CC BY-SA 4.0.
+  image: https://makerworld.bblmw.com/makerworld/model/US2502c5ba37d93/design/695458619247a126.jpeg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: Wound Packing Trainer Mold — laceration
+  category: hemorrhage-wound-care
+  url: https://makerworld.com/en/models/1091653
+  source: MakerWorld
+  notes: Companion mold to the bullet-wound version, casting a laceration-pattern packing trainer. By HealthcareSim Guy, CC BY-SA 4.0.
+  image: https://makerworld.bblmw.com/makerworld/model/US6ec01df0c29484/design/03752c6bac2164cc.jpeg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: SuSiPed suture pad molds and build guides
+  category: hemorrhage-wound-care
+  url: https://lmu-klinikum.de/hauner/kinderchirurgische-klinik-und-poliklinik/studium-fort-und-weiterbildung/simulationstraining/building-instructions/english/susiped-1-0/single-interrupted-suture-and-slipknot/e648f748122968d1
+  source: LMU Klinikum (Munich)
+  notes: Pediatric surgery teaching program publishing free STL molds, blockers, and holders for cast silicone suture pads, with step-by-step casting instructions in English. License unstated; link only.
 
 - name: Wearable Cric Trainer
   category: airway
