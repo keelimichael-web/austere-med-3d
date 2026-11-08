@@ -80,6 +80,33 @@
   source: LMU Klinikum (Munich)
   notes: Pediatric surgery teaching program publishing free STL molds, blockers, and holders for cast silicone suture pads, with step-by-step casting instructions in English. License unstated; link only.
 
+- name: Ultrasound IV Trainer (gel phantom)
+  category: ultrasound-phantoms
+  url: https://makerworld.com/en/models/1994790
+  source: MakerWorld
+  notes: Reusable ultrasound-guided IV access trainer. The printed cavity takes an agar pour with a latex-balloon vessel, plus "seek and find" target objects for probe-skills practice. By OffShiftDesign, CC BY-NC-SA 4.0.
+  image: https://makerworld.bblmw.com/makerworld/model/US6b3333ef2bf2eb/design/2025-11-13_eb08912f4013c8.jpg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: Ultrasound Puncture Trainer
+  category: ultrasound-phantoms
+  url: https://makerworld.com/en/models/477592
+  source: MakerWorld
+  notes: Low-budget reusable ultrasound IV access trainer; agar-agar gel is cheap, melts down for re-pours, and discards into biological waste. By David, CC BY-NC 4.0.
+  image: https://makerworld.bblmw.com/makerworld/model/USd38371036399d3/design/2024-05-28_777d7831e872c.jpg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: Ultrasound Cannula Phantom
+  category: ultrasound-phantoms
+  url: https://www.printables.com/model/1305338-ultrasound-cannula-phantom
+  source: Printables
+  notes: Simple printed phantom for ultrasound-guided cannulation skills. By glfharris, CC BY-NC-SA 4.0.
+  image: https://media.printables.com/media/prints/147b51c8-8180-4264-a8b2-3db8badf5abe/images/12866324_bb4267d6-cfdc-44a8-a060-b71189441674_408f2df1-620e-461c-b1c9-7b7bbc6d0b23/thumbs/cover/1200x630/jpg/diagram_box.jpg
+
+- name: Wall-less vessel phantom construction (paper)
+  category: ultrasound-phantoms
+  url: https://discovery.ucl.ac.uk/id/eprint/1472123/
+  source: J Ultrasound Med (UCL)
+  notes: Peer-reviewed method for building vascular phantoms from printed chambers filled with agar, forming vessels by pulling out rods after the set — wall-less lumens image cleaner than embedded tubing. Free accepted manuscript at the link; the STL chamber files ship with the journal version. Nikitichev et al., 2016.
+
 - name: Wearable Cric Trainer
   category: airway
   url: https://emcrit.org/emcrit/wearable-cric-trainer/
