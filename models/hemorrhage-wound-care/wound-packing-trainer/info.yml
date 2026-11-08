@@ -1,0 +1,7 @@
+name: Wound packing trainer
+intervention: Hemorrhage control, wound packing
+description: Two-piece dowel-pinned block with a deep wound tract, narrow entry over a wide internal pocket with a lateral extension, and a bleeder channel for surgical tubing from an IV bag. Opens for cleaning and gelatin relining. OpenSCAD source included.
+license: CC BY-NC-SA 4.0
+print_notes: Print wound_half.stl twice and wound_peg.stl four times. PLA, 2 perimeters, 10% infill, no supports.
+consumables: Packing gauze, 6 mm OD surgical tubing plus IV bag for the bleeding model, optional gelatin liner.
+credit: Original design for this repository
