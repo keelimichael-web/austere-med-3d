@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 MODELS = ROOT / "models"
 EXTERNAL = ROOT / "catalog" / "external.yml"
 SITE = ROOT / "site"
-REPO = os.environ.get("GITHUB_REPOSITORY", "keelimichael-web/austere-med-3d")
+REPO = os.environ.get("GITHUB_REPOSITORY", "keelimichael-web/resistance-medicine-printworks")
 BRANCH = os.environ.get("GITHUB_REF_NAME", "main")
 PAGES_URL = f"https://{REPO.split('/')[0]}.github.io/{REPO.split('/')[1]}/"
 
@@ -350,7 +350,7 @@ def build_index(entries) -> str:
     n_ext = sum(1 for e in entries if e["kind"] == "external")
     og_img = next((PAGES_URL + e["img"] for e in entries if e.get("img")), "")
     out = head(
-        "Austere Medicine 3D Training Aids",
+        "Resistance Medicine Printworks",
         "A living repository of 3D-printable training aids for medical interventions.",
         PAGES_URL, og_img,
     )
@@ -359,8 +359,8 @@ def build_index(entries) -> str:
   <div class="masthead">
     {LORRAINE}
     <div>
-      <p class="kicker">Companion resource</p>
-      <h1>Austere Medicine<br>3D Training Aids</h1>
+      <p class="kicker">3D-printed training aids</p>
+      <h1>Resistance Medicine<br>Printworks</h1>
     </div>
   </div>
   <p class="sub">A living repository of printable training aids for medical interventions, maintained by contributors to <em>Resistance Medicine: A Medical Annex to the Resistance Operating Concept</em>. Add a model to the <a href="https://github.com/{REPO}">repository</a> and this page rebuilds itself.</p>
@@ -383,7 +383,7 @@ def build_index(entries) -> str:
 
 <footer>
   <p>Training aids only; nothing here is a medical device or intended for clinical use. Contributions welcome: see the <a href="https://github.com/{REPO}/blob/main/CONTRIBUTING.md">contribution guide</a>. Unless marked otherwise, hosted models are CC BY-NC-SA 4.0.</p>
-  <p id="cite"><strong>Cite as:</strong> <em>Austere Medicine 3D Training Aids</em>, living repository. {PAGES_URL}</p>
+  <p id="cite"><strong>Cite as:</strong> <em>Resistance Medicine Printworks</em>, a living repository of 3D-printed medical training aids. {PAGES_URL}</p>
 </footer>
 </div>
 {SEARCH_JS}
@@ -430,7 +430,7 @@ def build_model_page(e) -> str:
 {body}
 </article>
 <footer>
-  <p>Training aid only; not a medical device, not for clinical use. Part of <a href="../index.html">Austere Medicine 3D Training Aids</a>.</p>
+  <p>Training aid only; not a medical device, not for clinical use. Part of <a href="../index.html">Resistance Medicine Printworks</a>.</p>
 </footer>
 </div>
 </body>

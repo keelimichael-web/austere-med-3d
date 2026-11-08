@@ -1,8 +1,8 @@
-# Austere Medicine 3D Training Aids
+# Resistance Medicine Printworks
 
-A living repository of 3D-printable training aids for medical interventions, maintained by contributors to the *Medical Annex to the Resistance Operating Concept* (SOMA MSIW working group) and open to the wider austere medicine community.
+A living repository of 3D-printable training aids for medical interventions, maintained by contributors to *Resistance Medicine: A Medical Annex to the Resistance Operating Concept* (SOMA MSIW working group) and open to the wider austere medicine community.
 
-**Browse the catalog:** https://keelimichael-web.github.io/austere-med-3d/
+**Browse the catalog:** https://keelimichael-web.github.io/resistance-medicine-printworks/
 
 The catalog page rebuilds automatically every time a model is added to this repository. Add files, and the site updates itself.
 
