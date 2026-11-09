@@ -66,6 +66,13 @@
   source: Thingiverse
   notes: Two-part exterior mold plus three interchangeable airway cores — easy, medium, and hard — for pouring silicone intubation trainers. The hard core adds tonsils, a narrow airway, an obstructing epiglottis, and an anterior trachea, so a program can run a real difficulty progression. Takes about 40 oz of silicone per pour. By gschappelle, CC BY-SA 4.0.
 
+- name: Abdominal Thrust (Heimlich) Training Model
+  category: airway
+  url: https://makerworld.com/en/models/1714900
+  source: MakerWorld
+  notes: Mechanical demonstrator for the Heimlich maneuver — simulated airway obstruction pops free under correctly aimed abdominal thrusts, teaching the expulsion principle before manikin practice. By muratgokduman, CC BY-NC 4.0.
+  image: https://makerworld.bblmw.com/makerworld/model/US32fa3d8352e905/design/2025-08-19_5c32c2e1c652.png?x-oss-process=image/resize,w_1200/ignore-error,1
+
 - name: Anti-Choke Trainer (adult + pediatric)
   category: airway
   url: https://makerworld.com/en/models/1666237
@@ -100,6 +107,19 @@
   notes: Companion mold to the bullet-wound version, casting a laceration-pattern packing trainer. By HealthcareSim Guy, CC BY-SA 4.0.
   image: https://makerworld.bblmw.com/makerworld/model/US6ec01df0c29484/design/03752c6bac2164cc.jpeg?x-oss-process=image/resize,w_1200/ignore-error,1
 
+- name: Embedded Object Arm Simulation
+  category: hemorrhage-wound-care
+  url: https://makerworld.com/en/models/2617430
+  source: MakerWorld
+  notes: Paramedic-designed penetrating-injury arm with an embedded object, for teaching the don't-remove-stabilize response. The only open trainer found for impaled-object management. By DIMENSIONYX, MakerWorld Standard Digital File License (free to print; files not redistributable).
+  image: https://makerworld.bblmw.com/makerworld/model/US6e60910cbc0c7d/design/cc780fcb07ccec29.jpeg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: Surgical Knot Tying Trainer
+  category: hemorrhage-wound-care
+  url: https://www.thingiverse.com/thing:5421707
+  source: Thingiverse
+  notes: Knot bench with lace posts for practicing surgical knot tying with suture, string, or shoelace; suction cups fix it to a table. From the designer of the chest tube simulator listed under thoracic. By 2theRescue, CC BY-NC 4.0.
+
 - name: SuSiPed suture pad molds and build guides
   category: hemorrhage-wound-care
   url: https://lmu-klinikum.de/hauner/kinderchirurgische-klinik-und-poliklinik/studium-fort-und-weiterbildung/simulationstraining/building-instructions/english/susiped-1-0/single-interrupted-suture-and-slipknot/e648f748122968d1
@@ -126,6 +146,12 @@
   source: Printables
   notes: Simple printed phantom for ultrasound-guided cannulation skills. By glfharris, CC BY-NC-SA 4.0.
   image: https://media.printables.com/media/prints/147b51c8-8180-4264-a8b2-3db8badf5abe/images/12866324_bb4267d6-cfdc-44a8-a060-b71189441674_408f2df1-620e-461c-b1c9-7b7bbc6d0b23/thumbs/cover/1200x630/jpg/diagram_box.jpg
+
+- name: Ultrasound SIM Probe (scenario prop)
+  category: ultrasound-phantoms
+  url: https://www.thingiverse.com/thing:4036242
+  source: Thingiverse
+  notes: Dummy ultrasound probe for scenario-based simulation, so students rehearse probe handling and exam flow without risking a real transducer. By 2theRescue, CC BY 4.0.
 
 - name: Ultrasound-Capable Central Line Trainer
   category: ultrasound-phantoms
