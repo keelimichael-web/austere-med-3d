@@ -5,3 +5,4 @@ license: CC BY-NC-SA 4.0
 print_notes: PLA, 2 perimeters, 8-12% gyroid infill, no supports. Perimeter count sets cortex thickness.
 consumables: None. Reprint the block when chewed up (about 50 g filament).
 credit: Original design for this repository
+tier: basic

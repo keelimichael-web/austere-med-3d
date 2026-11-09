@@ -103,6 +103,7 @@ def scan_models():
                 "license": info.get("license", ""),
                 "credit": info.get("credit", ""),
                 "source": info.get("source", ""),
+                "tier": info.get("tier", ""),
                 "url": f"https://github.com/{REPO}/tree/{BRANCH}/{rel}",
                 "page": f"m/{slug}.html" if readme_path.exists() else "",
                 "img": f"img/{slug}{preview.suffix}" if preview else "",
@@ -331,24 +332,38 @@ def card(e) -> str:
 
 
 def build_index(entries) -> str:
+    main_entries = [e for e in entries if e.get("tier") != "basic"]
+    basic_entries = [e for e in entries if e.get("tier") == "basic"]
     cats, seen = [], set()
-    for slug in CATEGORY_ORDER + sorted({e["category"] for e in entries}):
-        if slug in seen or not any(e["category"] == slug for e in entries):
+    for slug in CATEGORY_ORDER + sorted({e["category"] for e in main_entries}):
+        if slug in seen or not any(e["category"] == slug for e in main_entries):
             continue
         seen.add(slug)
-        cards = "\n".join(card(e) for e in entries if e["category"] == slug)
+        cards = "\n".join(card(e) for e in main_entries if e["category"] == slug)
         cats.append(
             f'<section class="cat" id="{html.escape(slug)}">'
             f'<h2><span class="n">{len(seen):02d}</span>{html.escape(cat_title(slug))}</h2>\n'
+            f'<div class="grid">{cards}</div></section>'
+        )
+    if basic_entries:
+        cards = "\n".join(card(e) for e in basic_entries)
+        cats.append(
+            f'<section class="cat" id="workshop-basics">'
+            f'<h2><span class="n">{len(seen) + 1:02d}</span>Workshop basics</h2>\n'
+            '<p class="meta">Simple parametric originals built in this workshop before the '
+            'curated collection above existed. They print and they work, but where a vetted '
+            'community design above covers the same intervention, start there.</p>\n'
             f'<div class="grid">{cards}</div></section>'
         )
     pills = "".join(
         f'<a class="pill" href="#{html.escape(s)}">{html.escape(cat_title(s))}</a>'
         for s in CATEGORY_ORDER if s in seen
     )
+    if basic_entries:
+        pills += '<a class="pill" href="#workshop-basics">Workshop basics</a>'
     n_repo = sum(1 for e in entries if e["kind"] == "repo")
     n_ext = sum(1 for e in entries if e["kind"] == "external")
-    og_img = next((PAGES_URL + e["img"] for e in entries
+    og_img = next((PAGES_URL + e["img"] for e in main_entries
                    if e.get("img") and e["kind"] == "repo"), "")
     out = head(
         "Resistance Medicine Printworks",

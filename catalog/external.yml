@@ -46,6 +46,13 @@
   notes: Mold set for casting a silicone intubation and airway-anatomy trainer in Ecoflex. By HealthcareSim Guy, CC BY-NC-SA 4.0.
   image: https://makerworld.bblmw.com/makerworld/model/US9506a9dcb64501/design/879d559a9bf0c957.jpeg?x-oss-process=image/resize,w_1200/ignore-error,1
 
+- name: INCISA FN-1 Cricothyrotomy Trainer
+  category: airway
+  url: https://makerworld.com/en/models/3519582
+  source: MakerWorld
+  notes: Modular front-of-neck-access task trainer developed with the Kentuckiana Prehospital Education Consortium (KPEC). A printed neck base holds a soft TPU larynx and trachea under replaceable latex skin, with four airway variants and a BVM port. By OffShiftDesign, MakerWorld Exclusive License (free to print via MakerWorld; no redistribution).
+  image: https://makerworld.bblmw.com/makerworld/model/USa24efef6adefa2/design/4237a160263bbaf3.jpg?x-oss-process=image/resize,w_1200/ignore-error,1
+
 - name: Chest Tube Trainer (rib model)
   category: thoracic
   url: https://makerworld.com/en/models/2718035
@@ -148,6 +155,18 @@
   source: MakerWorld
   notes: Active pneumothorax trainer that installs inside a standard CPR manikin. Embedded solenoids, pressure sensors, and an ESP32 give real air-puff feedback for needle decompression and finger thoracostomy. By OffShiftDesign, CC BY-NC-SA 4.0.
   image: https://makerworld.bblmw.com/makerworld/model/US991efe526ab4ce/design/132474a59d12090b.png?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: OpenHumerus IO Access Trainer
+  category: vascular-access
+  url: https://3d.nih.gov/entries/3DPX-011941
+  source: NIH 3D
+  notes: Open-source humeral head IO access trainer, the proximal-humerus companion to the designer's OpenTibia model. A reusable base holds small replaceable humeral-head inserts so the model restores cheaply after several access attempts; 5-6 layers of foam medical tape simulate the dermis. By Brooks Dillahunty, CC BY-NC-ND 4.0.
+
+- name: Umbilical Vein Catheterization Trainer
+  category: vascular-access
+  url: https://3d.nih.gov/entries/3DPX-023817
+  source: NIH 3D
+  notes: Low-cost neonatal umbilical venous catheterization task trainer. Reusable silicone body, a replaceable cannulatable three-vessel cord, and a fluid reservoir cover vessel identification, catheter insertion, aspiration, and fluid administration without a full neonatal manikin. By irenejunmd, CC BY-NC 4.0.
 
 - name: Working group 3D printing drive
   category: misc

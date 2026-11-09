@@ -5,3 +5,4 @@ license: CC BY-NC-SA 4.0
 print_notes: Print suture_frame_base.stl and suture_frame_top.stl, one each. PLA, 3 perimeters, no supports.
 consumables: Skin analog sheet, nitrile glove, silicone, inner tube, thin foam, or chicken skin.
 credit: Original design for this repository
+tier: basic
