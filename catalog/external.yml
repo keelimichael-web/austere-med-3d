@@ -127,6 +127,12 @@
   notes: Simple printed phantom for ultrasound-guided cannulation skills. By glfharris, CC BY-NC-SA 4.0.
   image: https://media.printables.com/media/prints/147b51c8-8180-4264-a8b2-3db8badf5abe/images/12866324_bb4267d6-cfdc-44a8-a060-b71189441674_408f2df1-620e-461c-b1c9-7b7bbc6d0b23/thumbs/cover/1200x630/jpg/diagram_box.jpg
 
+- name: Ultrasound-Capable Central Line Trainer
+  category: ultrasound-phantoms
+  url: https://www.aliem.com/idea-series-ultrasound-capable-3d-printed-central-line-trainer/
+  source: ALiEM (IDEA series)
+  notes: Head-and-neck central line trainer for about $80 in materials — a printed head with emphasized sternocleidomastoid and clavicle landmarks takes a ballistic-gel neck insert from the included mold, with latex tubing vessels and an optional syringe for arterial pulsation on ultrasound. Head and mold files are in the linked public Google Drive. By Taylor Fischer PA-C (Wingate University); files' license unstated, link only.
+
 - name: Wall-less vessel phantom construction (paper)
   category: ultrasound-phantoms
   url: https://discovery.ucl.ac.uk/id/eprint/1472123/

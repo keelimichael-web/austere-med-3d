@@ -1,0 +1,40 @@
+# Interventions with NO open-source printable trainer anywhere, as of the
+# dates noted. Each was swept across MakerWorld, Printables, Thingiverse,
+# NIH 3D, GrabCAD, Cults3D, and the open sim-education literature.
+# These are standing requests: if you design one, it has a home here.
+
+- name: Tourniquet application limb
+  swept: November 2026
+  notes: Only TQ holsters and commercial silicone legs exist. A printable
+    limb (or mold) with enough circumference and compressibility to teach
+    real windlass tension has not been published anywhere.
+
+- name: Chest seal application surface
+  swept: November 2026
+  notes: Commercial wearable trainers exist (TrueClot, Mountain Man), but
+    no printable chest surface with an open or sucking wound for seal
+    placement and burping drills.
+
+- name: Lateral canthotomy trainer (printed)
+  swept: November 2026
+  notes: Published models are hybrids - gelatin eyes, ping-pong balls, and
+    rubber bands in an existing face model. The JETem gelatin eye recipe
+    listed under Head & spine is the best open resource; a purpose-built
+    printable orbit with cantholysis feedback does not exist.
+
+- name: Nasogastric tube trainer
+  swept: November 2026
+  notes: No open printable head/esophagus trainer for NG passage.
+    University capstone projects exist on paper only.
+
+- name: Obstetric trainers (delivery, perineal repair, PPH)
+  swept: November 2026
+  notes: Published 3D-printed perineal repair molds trace back to purchased
+    base meshes, so nothing is openly redistributable. A from-scratch open
+    perineum mold or PPH tamponade trainer would be first of its kind.
+
+- name: Fasciotomy / escharotomy limb
+  swept: November 2026
+  notes: Military programs use proprietary trainers (SIMETRI). The open
+    literature has gelatin-and-tubing builds (JETem escharotomy innovation,
+    CC BY) but no printable layered-limb files.

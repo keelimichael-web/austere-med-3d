@@ -17,6 +17,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 MODELS = ROOT / "models"
 EXTERNAL = ROOT / "catalog" / "external.yml"
+WANTED = ROOT / "catalog" / "wanted.yml"
 SITE = ROOT / "site"
 REPO = os.environ.get("GITHUB_REPOSITORY", "keelimichael-web/resistance-medicine-printworks")
 BRANCH = os.environ.get("GITHUB_REF_NAME", "main")
@@ -356,12 +357,34 @@ def build_index(entries) -> str:
             'community design above covers the same intervention, start there.</p>\n'
             f'<div class="grid">{cards}</div></section>'
         )
+    wanted = yaml.safe_load(WANTED.read_text()) if WANTED.exists() else []
+    if wanted:
+        esc = html.escape
+        items = "\n".join(
+            f'<article class="card" data-search="{esc((w.get("name", "") + " wanted gap").lower())}">'
+            f'<div><span class="badge badge-external">Wanted</span></div>'
+            f'<h3>{esc(w.get("name", ""))}</h3>'
+            f'<p>{esc(" ".join(str(w.get("notes", "")).split()))}</p>'
+            f'<p class="meta">Swept {esc(str(w.get("swept", "")))} — nothing open exists yet.</p>'
+            "</article>"
+            for w in wanted
+        )
+        cats.append(
+            f'<section class="cat" id="wanted">'
+            f'<h2><span class="n">{len(seen) + (2 if basic_entries else 1):02d}</span>Wanted: designs that don&rsquo;t exist yet</h2>\n'
+            '<p class="meta">Interventions with no open-source printable trainer anywhere, '
+            'swept across MakerWorld, Printables, Thingiverse, NIH 3D, GrabCAD, Cults3D, and '
+            'the open simulation literature. Design one and it has a home here.</p>\n'
+            f'<div class="grid">{items}</div></section>'
+        )
     pills = "".join(
         f'<a class="pill" href="#{html.escape(s)}">{html.escape(cat_title(s))}</a>'
         for s in CATEGORY_ORDER if s in seen
     )
     if basic_entries:
         pills += '<a class="pill" href="#workshop-basics">Workshop basics</a>'
+    if wanted:
+        pills += '<a class="pill" href="#wanted">Wanted</a>'
     n_repo = sum(1 for e in entries if e["kind"] == "repo")
     n_ext = sum(1 for e in entries if e["kind"] == "external")
     og_img = next((PAGES_URL + e["img"] for e in main_entries
