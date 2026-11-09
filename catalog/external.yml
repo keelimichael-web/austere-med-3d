@@ -66,6 +66,19 @@
   source: Thingiverse
   notes: Two-part exterior mold plus three interchangeable airway cores — easy, medium, and hard — for pouring silicone intubation trainers. The hard core adds tonsils, a narrow airway, an obstructing epiglottis, and an anterior trachea, so a program can run a real difficulty progression. Takes about 40 oz of silicone per pour. By gschappelle, CC BY-SA 4.0.
 
+- name: Anti-Choke Trainer (adult + pediatric)
+  category: airway
+  url: https://makerworld.com/en/models/1666237
+  source: MakerWorld
+  notes: All-TPU training version of a suction anti-choking device with adult and pediatric mask variants, printed support-free with a 0%-infill seal lip so the mask seats softly on a manikin face. By PhantomCommit, MakerWorld Standard Digital File License (free to print; files not redistributable).
+  image: https://makerworld.bblmw.com/makerworld/model/US18dbed3f0fbf49/design/2025-08-03_c6513c4e5b93d.jpg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: DIY Video Laryngoscope (training)
+  category: airway
+  url: https://www.thingiverse.com/thing:3967800
+  source: Thingiverse
+  notes: Printed laryngoscope handle that takes a sub-10-euro USB endoscope camera, making a functional video laryngoscope for about 15 euros — built for tutoring and airway training where commercial VL is unaffordable. Derived from the airangelblade.org project with the original designer's blessing. By 30-1 (the IO trainer designer listed under vascular access), CC BY 4.0.
+
 - name: Chest Tube Trainer (rib model)
   category: thoracic
   url: https://makerworld.com/en/models/2718035
@@ -212,6 +225,12 @@
   source: NIH 3D
   notes: Low-cost neonatal umbilical venous catheterization task trainer. Reusable silicone body, a replaceable cannulatable three-vessel cord, and a fluid reservoir cover vessel identification, catheter insertion, aspiration, and fluid administration without a full neonatal manikin. By irenejunmd, CC BY-NC 4.0.
 
+- name: OpenTibia IO Access Simulator
+  category: vascular-access
+  url: https://www.thingiverse.com/thing:2750234
+  source: Thingiverse
+  notes: Open-source tibial IO trainer with a removable panel over the insertion site, created for inexpensive training in developing-country medical communities and field-proven in Haiti. The tibial companion to the OpenHumerus trainer listed here, by the same designer. By Bdillahunty (Brooks Dillahunty), CC BY-NC-ND 4.0.
+
 - name: Distal Femur IO Trainer
   category: vascular-access
   url: https://www.printables.com/model/1011433-distal-femur-io-trainer
@@ -225,6 +244,18 @@
   source: MakerWorld
   notes: One-piece mold for casting silicone suture pads for laceration repair practice. Simpler than the LMU SuSiPed system and carries a clear open license. By MedLit Inovation, CC BY-SA 4.0.
   image: https://makerworld.bblmw.com/makerworld/model/USb58f47de22394e/design/2024-03-03_1cf1aeca99bbb.jpg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: Pediatric Otic & Nasal Foreign Body Trainer
+  category: head-spine
+  url: https://www.thingiverse.com/thing:7214965
+  source: Thingiverse
+  notes: Validated task trainer for ear and nose foreign body removal — a printed 5-year-old-scale head with a tiltable base takes snap-in silicone ears and nares cast from the included molds (Ecoflex 00-30). Under $25 in materials, about $3 per replacement part, no visible wear after 50+ users. From a UT Southwestern / Texas Children's team. By DrLith (Lith Nasif MD et al.), CC BY-SA 4.0.
+
+- name: TMJ Dislocation Reduction Trainer (build guide)
+  category: head-spine
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11793843/
+  source: Cureus (journal)
+  notes: Peer-reviewed build guide for a jaw dislocation reduction trainer costing under $20 — a printed skull and mandible (free Thingiverse skull, thing:819046) joined with hardware-store screws, with elastic bands standing in for masseter and pterygoid tension. Adjustable resistance, about two days of printing and an hour of assembly. Shin, Wang & Huang, CC BY 4.0.
 
 - name: Working group 3D printing drive
   category: misc
