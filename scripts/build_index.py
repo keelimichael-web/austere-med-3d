@@ -22,7 +22,7 @@ REPO = os.environ.get("GITHUB_REPOSITORY", "keelimichael-web/resistance-medicine
 BRANCH = os.environ.get("GITHUB_REF_NAME", "main")
 PAGES_URL = f"https://{REPO.split('/')[0]}.github.io/{REPO.split('/')[1]}/"
 
-MODEL_EXTS = {".stl", ".3mf", ".step", ".stp", ".obj", ".scad", ".f3d", ".gcode", ".zip"}
+MODEL_EXTS = {".stl", ".3mf", ".step", ".stp", ".obj", ".scad", ".f3d", ".gcode", ".zip", ".pdf"}
 
 CATEGORY_TITLES = {
     "airway": "Airway",

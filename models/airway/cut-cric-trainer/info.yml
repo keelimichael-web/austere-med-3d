@@ -1,0 +1,9 @@
+name: C.U.T. Cricothyrotomy Trainer
+intervention: Surgical cricothyrotomy
+description: Reusable neck-and-larynx trainer built so facilities can run repeated cric training without burning expensive commercial replacement skins. Full anatomical neck unit with realistic landmarks, a flexible cartilage overlay, and a parts tray. Mirrored here in full under its public-domain license.
+author: SpragClutch (Printables)
+source: https://www.printables.com/model/698420-cricothyrotomy-cric-crico-crioid-trainer
+license: CC0 1.0 public domain
+print_notes: 0.3 mm layers, 16 percent or greater infill. Neck unit and tray in PLA, no supports. Cartilage overlay in flexible TPU (NinjaTek Cheetah recommended), with supports.
+consumables: Tape or commercial replacement skin over the cartilage overlay for the membrane layer. Part sources and assembly are in build_guide.pdf.
+credit: SpragClutch, mirrored from Printables under CC0

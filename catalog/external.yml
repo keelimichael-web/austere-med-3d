@@ -21,13 +21,6 @@
   notes: Minimal cric trainer plus a casting mold; duct tape works for the membrane. By Miles L, CC BY 4.0.
   image: https://media.printables.com/media/prints/836133/images/6442606_c60fabe5-c7f2-4a2c-a0b0-b4931ffcfbc1_eb229b7c-7bde-454d-b558-e549e53125fa/thumbs/cover/1200x630/jpg/48ad24c7-7c44-4a17-a1b9-e3a8ed6d65ab.jpg
 
-- name: Cricothyrotomy Trainer (CC0)
-  category: airway
-  url: https://www.printables.com/model/698420-cricothyrotomy-cric-crico-crioid-trainer
-  source: Printables
-  notes: Reusable cric trainer aimed at keeping hospital staff proficient without burning expensive commercial consumables. By SpragClutch, CC0 public domain, so it can be freely mirrored and remixed.
-  image: https://media.printables.com/media/prints/698420/images/5485109_b4e39946-43d6-4d01-bbe7-97347c0cb842_fc7c2860-3ab7-4a37-896b-cc596ee61b82/thumbs/cover/1200x630/jpg/4f78d2641cf5fb401150c21615de8c78_display_large_698420.jpg
-
 - name: CICO Rescue Cricothyroidotomy Trainer
   category: airway
   url: https://www.thingiverse.com/thing:2530474
@@ -114,19 +107,47 @@
   notes: Strap-on cricothyrotomy trainer worn by a live role-player, so the student manages a moving patient, not a block on a table. Build instructions at the link; the hosted STL link has been unreliable for years (dead as of Nov 2026), which is part of why this repository exists.
   credit: Shared in the Med Annex working group
 
-- name: Rib section trainer
+- name: Chest Tube Simulator (rib section)
   category: thoracic
   url: https://www.thingiverse.com/thing:4018084
   source: Thingiverse
-  notes: Printable rib section for finger thoracostomy, chest tube, and needle decompression landmark practice. Overlay with gelatin, foam, or pork belly for tissue feel.
+  notes: Printable rib section for finger thoracostomy, chest tube, and needle decompression landmark practice. Overlay with gelatin, foam, or pork belly for tissue feel. By 2theRescue, CC BY 4.0.
   credit: Shared in the Med Annex working group
 
-- name: IO trainer
+- name: Intraosseous Access Training Device
   category: vascular-access
   url: https://www.thingiverse.com/thing:4157805
   source: Thingiverse
-  notes: Printable intraosseous access trainer. Infill percentage sets the cortical "give"; experiment between 10 and 25 percent.
+  notes: Printable proximal tibia IO trainer. Designer recommends PLA at 40 percent infill for the tibia and 70 percent for the cover; infill sets the cortical "give". By 30-1, CC BY 4.0.
   credit: Shared in the Med Annex working group
+
+- name: IV Trainer Access Trainer
+  category: vascular-access
+  url: https://makerworld.com/en/models/1326752
+  source: MakerWorld
+  notes: Strap-on venous access trainer with rails for threading elastic or velcro to secure it to a live role-player's arm or leg; an old infusion line serves as the vein. 180+ ratings. By 3DMillo, MakerWorld Standard Digital File License (free to print; files not redistributable).
+  image: https://makerworld.bblmw.com/makerworld/model/USade9bcf41aa2d9/design/2025-04-17_658c59c7e45b98.jpg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: IV Trainer Pro
+  category: vascular-access
+  url: https://makerworld.com/en/models/1969964
+  source: MakerWorld
+  notes: Compact venous access block for IV placement and infusion practice, built for skills labs that can't justify commercial training arms. By Leo Maggi, MakerWorld Standard Digital File License (free to print; files not redistributable).
+  image: https://makerworld.bblmw.com/makerworld/model/US62210d01589410/design/2025-11-07_31e23b5102be6.jpg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: VeinGuide Venipuncture Training Arm
+  category: vascular-access
+  url: https://makerworld.com/en/models/3481887
+  source: MakerWorld
+  notes: Part-task venipuncture and blood-draw arm. Latex tubing veins sit under 1 mm tattoo-practice skin tensioned drum-tight by printed clamps and thumbwheels, so vein location, anchoring, insertion, and flashback all feel right. By 469 Franklin Workshop, CC0 public domain (mirrorable).
+  image: https://makerworld.bblmw.com/makerworld/model/US29aca61c8e6b66/design/da2bf59785eb0bb4.jpg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: Pneumatic Thoracostomy Sim Trainer
+  category: thoracic
+  url: https://makerworld.com/en/models/2704258
+  source: MakerWorld
+  notes: Active pneumothorax trainer that installs inside a standard CPR manikin. Embedded solenoids, pressure sensors, and an ESP32 give real air-puff feedback for needle decompression and finger thoracostomy. By OffShiftDesign, CC BY-NC-SA 4.0.
+  image: https://makerworld.bblmw.com/makerworld/model/US991efe526ab4ce/design/132474a59d12090b.png?x-oss-process=image/resize,w_1200/ignore-error,1
 
 - name: Working group 3D printing drive
   category: misc
