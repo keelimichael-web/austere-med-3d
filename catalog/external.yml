@@ -25,7 +25,7 @@
   category: airway
   url: https://www.thingiverse.com/thing:2530474
   source: Thingiverse
-  notes: Free neck-and-larynx combination trainer built to accompany the Vortex Approach CICO teaching material (vortexapproach.org). By drandybuck, CC BY-NC-ND 4.0.
+  notes: Free neck-and-larynx combination trainer built to accompany the Vortex Approach CICO teaching material (vortexapproach.org). By drandybuck, CC BY-NC-ND 4.0. Start of the CICO lineage that ends in the NZ CPG v2.4 listed above; frankvdh's V2 remix (thing:2775062, CC BY-SA) adds support-free printing and a full airway lumen.
 
 - name: High-fidelity cric trainer (validated)
   category: airway
@@ -52,6 +52,19 @@
   source: MakerWorld
   notes: Modular front-of-neck-access task trainer developed with the Kentuckiana Prehospital Education Consortium (KPEC). A printed neck base holds a soft TPU larynx and trachea under replaceable latex skin, with four airway variants and a BVM port. By OffShiftDesign, MakerWorld Exclusive License (free to print via MakerWorld; no redistribution).
   image: https://makerworld.bblmw.com/makerworld/model/USa24efef6adefa2/design/4237a160263bbaf3.jpg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: CICO + Tracheostomy Trainer v2.4
+  category: airway
+  url: https://makerworld.com/en/models/1641122
+  source: MakerWorld
+  notes: The most evolved print of the Vortex CICO lineage. The New Zealand Clinical Printing Group (anaesthetists and ICU clinicians) unified their independent CICO trainer designs into one model, and this remix adds Bambu print profiles. Includes an alternative TPU larynx/trachea with a tracheostomy port, so blocked-trach and trach-change drills can be run alongside front-of-neck access. Original instructions PDF included. By Penfoolery after NZ CPG, MakerWorld Standard Digital File License (free to print; files not redistributable).
+  image: https://makerworld.bblmw.com/makerworld/model/USfeed2e113b682c/design/2025-07-26_a817ea2fc451e.webp?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: Intubation Trainer with graded difficulty
+  category: airway
+  url: https://www.thingiverse.com/thing:6804629
+  source: Thingiverse
+  notes: Two-part exterior mold plus three interchangeable airway cores — easy, medium, and hard — for pouring silicone intubation trainers. The hard core adds tonsils, a narrow airway, an obstructing epiglottis, and an anterior trachea, so a program can run a real difficulty progression. Takes about 40 oz of silicone per pour. By gschappelle, CC BY-SA 4.0.
 
 - name: Chest Tube Trainer (rib model)
   category: thoracic
@@ -156,6 +169,37 @@
   notes: Active pneumothorax trainer that installs inside a standard CPR manikin. Embedded solenoids, pressure sensors, and an ESP32 give real air-puff feedback for needle decompression and finger thoracostomy. By OffShiftDesign, CC BY-NC-SA 4.0.
   image: https://makerworld.bblmw.com/makerworld/model/US991efe526ab4ce/design/132474a59d12090b.png?x-oss-process=image/resize,w_1200/ignore-error,1
 
+- name: Pericardiocentesis Teaching Model — blind (subxiphoid)
+  category: thoracic
+  url: https://grabcad.com/library/blind-pericardiocentesis-1
+  source: GrabCAD
+  notes: Printable rib-and-landmark model for blind subxiphoid pericardiocentesis, from an Albany Medical Center emergency medicine team. The companion peer-reviewed build guide (Lord, Lord & Geary, Clin Pract Cases Emerg Med 2021, CC BY 4.0) covers assembly and the gelatin pericardial sac. Files are free downloads with a GrabCAD account. By Garrett Lord, Spencer Lord MD, and Sean Geary MD.
+
+- name: Pericardiocentesis Teaching Model — ultrasound-guided
+  category: thoracic
+  url: https://grabcad.com/library/ultrasound-guided-pericardiocentesis-1
+  source: GrabCAD
+  notes: Ultrasound-guided companion to the blind subxiphoid model above, echogenic enough for probe-guided needle practice on the same low-cost build. Same Albany Medical Center team and CC BY 4.0 companion paper; files free with a GrabCAD account.
+
+- name: Burr Hole Model
+  category: head-spine
+  url: https://makerworld.com/en/models/34695-burr-hole-model
+  source: MakerWorld
+  notes: Emergency burr hole task trainer built to train emergency medicine residents. A printed skull holds a bag of "blood" over the brain; only the small bone insert reprints after each drill, and a silicone or clay sheet serves as scalp. By maureen.nemetski, CC BY-NC-SA 4.0.
+  image: https://makerworld.bblmw.com/makerworld/model/DSM00000000034695/design/2023-10-06_8essrat0zeg2.jpeg?x-oss-process=image/resize,w_1200/ignore-error,1
+
+- name: UCSF Lumbar Puncture Simulator
+  category: head-spine
+  url: https://3d.nih.gov/entries/3DPX-018069
+  source: NIH 3D
+  notes: Cost-effective lumbar puncture and intrathecal access simulator from the UCSF Makers Lab — 3D printed components plus silicone-cast tissue, designed to pair with the freely available "Articulating Lumbar Vertebrae" model by DaveMakesStuff. By ucsfmakerslab, CC BY-NC 4.0.
+
+- name: Gelatin eye model set (lateral canthotomy)
+  category: head-spine
+  url: https://jetem.org/?p=19360
+  source: JETem (journal)
+  notes: Open-access recipe for cheap gelatin eye models that drop into an existing 3D-printed face model, covering lateral canthotomy plus foreign body removal, fluorescein staining, and tonometry practice. No printable canthotomy trainer exists on any open platform (swept Nov 2026), so this VCU build guide is the lane's best open resource. Maupin et al., CC BY 4.0.
+
 - name: OpenHumerus IO Access Trainer
   category: vascular-access
   url: https://3d.nih.gov/entries/3DPX-011941
@@ -167,6 +211,20 @@
   url: https://3d.nih.gov/entries/3DPX-023817
   source: NIH 3D
   notes: Low-cost neonatal umbilical venous catheterization task trainer. Reusable silicone body, a replaceable cannulatable three-vessel cord, and a fluid reservoir cover vessel identification, catheter insertion, aspiration, and fluid administration without a full neonatal manikin. By irenejunmd, CC BY-NC 4.0.
+
+- name: Distal Femur IO Trainer
+  category: vascular-access
+  url: https://www.printables.com/model/1011433-distal-femur-io-trainer
+  source: Printables
+  notes: Distal femur IO access trainer with a replaceable hatch, completing the IO site set alongside the tibial and humeral trainers listed here — the distal femur is the preferred pediatric alternate site. By Miles L, CC BY-NC-SA 4.0.
+  image: https://media.printables.com/media/prints/1011433/images/7688028_af9ee53c-9451-4d9b-84dd-a82f750d3632_3f1932f7-0df7-4bd7-8e42-17d0c9a7c4c5/thumbs/cover/1200x630/png/img_3230.png
+
+- name: Surgical Suture Pad Mold
+  category: hemorrhage-wound-care
+  url: https://makerworld.com/en/models/221704
+  source: MakerWorld
+  notes: One-piece mold for casting silicone suture pads for laceration repair practice. Simpler than the LMU SuSiPed system and carries a clear open license. By MedLit Inovation, CC BY-SA 4.0.
+  image: https://makerworld.bblmw.com/makerworld/model/USb58f47de22394e/design/2024-03-03_1cf1aeca99bbb.jpg?x-oss-process=image/resize,w_1200/ignore-error,1
 
 - name: Working group 3D printing drive
   category: misc
