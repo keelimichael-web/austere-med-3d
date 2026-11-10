@@ -6,10 +6,6 @@ A living repository of 3D-printable training aids for medical interventions, mai
 
 The catalog page rebuilds automatically every time a model is added to this repository. Add files, and the site updates itself.
 
-## In memory of Ian Daniel
-
-This repository is dedicated to Ian Daniel. Ian was a nurse practitioner a few credits short of board certification in emergency medicine. His goal was to become the kind of emergency provider who could bring real care to people in hard places, with whatever was on hand. That is the same provider these training aids exist to build. See [DEDICATION.md](DEDICATION.md).
-
 ## What belongs here
 
 Printable models and build guides that help medics train real interventions:

@@ -413,12 +413,6 @@ def build_index(entries) -> str:
   {pills}
 </div>
 
-<div class="dedication">
-  <h2>In memory of Ian Daniel</h2>
-  <p>Ian was a nurse practitioner a few credits short of board certification in emergency medicine. His goal was to become the kind of emergency provider who could bring real care to people in hard places, with whatever was on hand.</p>
-  <p>Every model here helps someone train for the work he was preparing to do. The collection keeps growing in his name. <a href="https://github.com/{REPO}/blob/main/DEDICATION.md">Read the dedication</a>.</p>
-</div>
-
 {chr(10).join(cats)}
 
 <footer>
