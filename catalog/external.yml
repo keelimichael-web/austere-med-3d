@@ -214,6 +214,30 @@
   notes: Active pneumothorax trainer that installs inside a standard CPR manikin. Embedded solenoids, pressure sensors, and an ESP32 give real air-puff feedback for needle decompression and finger thoracostomy. By OffShiftDesign, CC BY-NC-SA 4.0.
   image: https://makerworld.bblmw.com/makerworld/model/US991efe526ab4ce/design/132474a59d12090b.png?x-oss-process=image/resize,w_1200/ignore-error,1
 
+- name: Neuraxial Trainer (spinal + epidural)
+  category: regional-anesthesia
+  url: https://www.thingiverse.com/thing:4560391
+  source: Thingiverse
+  notes: Lumbar spine T12-S1 segmented from deidentified CT for spinal and epidural simulation, with a supporting peer-reviewed publication (doi 10.2217/3dp-2017-0007). Embed in gel for a complete neuraxial phantom, or pair with the UCSF lumbar puncture simulator under Head & spine. By 3DMedLab, CC BY 4.0.
+
+- name: Paravertebral Block Trainer
+  category: regional-anesthesia
+  url: https://www.thingiverse.com/thing:4560395
+  source: Thingiverse
+  notes: Thoracic spine T5-T9 with ribs attached, CT-segmented, uploaded at the request of other training centers. The base model behind the ESP block trainer listed here. By 3DMedLab, CC BY 4.0.
+
+- name: Erector Spinae Plane (ESP) Block Trainer
+  category: regional-anesthesia
+  url: https://www.thingiverse.com/thing:6621136
+  source: Thingiverse
+  notes: Right T5-T8 transverse processes with rib stubs, trimmed from the 3DMedLab paravertebral model so the rib-to-transverse-process transition is visible for ultrasound landmarking. ESP blocks cover rib fracture and thoracic wall pain with a single fascial plane injection, which makes this one of the highest-value austere analgesia skills to train. By fluxamnesia, CC BY-SA 4.0.
+
+- name: Median Nerve Block Model
+  category: regional-anesthesia
+  url: https://www.thingiverse.com/thing:6377526
+  source: Thingiverse
+  notes: Pour mold for a forearm phantom with suspended artery and nerve analogs in ballistic gel, with a full bill of materials and assembly steps on the page. Covers ultrasound-guided median nerve block for hand and wrist injuries. By matt_grzywinski, CC BY-SA 4.0.
+
 - name: Pericardiocentesis Teaching Model — blind (subxiphoid)
   category: thoracic
   url: https://grabcad.com/library/blind-pericardiocentesis-1
@@ -282,6 +306,12 @@
   url: https://www.thingiverse.com/thing:7214965
   source: Thingiverse
   notes: Validated task trainer for ear and nose foreign body removal — a printed 5-year-old-scale head with a tiltable base takes snap-in silicone ears and nares cast from the included molds (Ecoflex 00-30). Under $25 in materials, about $3 per replacement part, no visible wear after 50+ users. From a UT Southwestern / Texas Children's team. By DrLith (Lith Nasif MD et al.), CC BY-SA 4.0.
+
+- name: Peritonsillar Abscess Drainage Trainer
+  category: head-spine
+  url: https://www.thingiverse.com/thing:4154635
+  source: Thingiverse
+  notes: Oral cavity insert that teaches peritonsillar abscess drainage — paint the printed pieces, load a balloon of hair conditioner as the "pus," and mount the assembly in any head form (the designer used a Halloween mask filled with expanding foam). By drmike15, CC BY-NC 4.0.
 
 - name: TMJ Dislocation Reduction Trainer (build guide)
   category: head-spine

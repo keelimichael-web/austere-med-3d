@@ -31,12 +31,14 @@ CATEGORY_TITLES = {
     "thoracic": "Thoracic",
     "hemorrhage-wound-care": "Hemorrhage & wound care",
     "ultrasound-phantoms": "Ultrasound phantoms",
+    "regional-anesthesia": "Regional anesthesia",
     "head-spine": "Head & spine",
     "misc": "General resources",
 }
 CATEGORY_ORDER = [
     "airway", "vascular-access", "thoracic",
-    "hemorrhage-wound-care", "ultrasound-phantoms", "head-spine", "misc",
+    "hemorrhage-wound-care", "ultrasound-phantoms", "regional-anesthesia",
+    "head-spine", "misc",
 ]
 
 # Cross of Lorraine, the resistance symbol on the Annex cover
